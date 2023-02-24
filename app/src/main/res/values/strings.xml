@@ -1,0 +1,15 @@
+<resources>
+    <string name="YourFitnessDiary">YourFitnessDiary</string>/>
+
+    <string-array name="Einheiten">
+        <item>g</item>
+        <item>kg</item>
+        <item>ml</item>
+        <item>l</item>
+        <item>Scheiben</item>
+        <item>Tassen</item>
+        <item>TL</item>
+        <item>EL</item>
+    </string-array>
+
+</resources>

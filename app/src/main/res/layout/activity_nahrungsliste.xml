@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Nahrungsmittel.Nahrungsliste">
+
+    <ImageView
+        android:id="@+id/imgV_emptyData"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout3"
+        app:srcCompat="@drawable/ic_emptydata" />
+
+    <TextView
+        android:id="@+id/tV_KeineEintraege"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:breakStrategy="high_quality"
+        android:text="Keine Einträge"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#000000"
+        android:textSize="24dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgV_emptyData" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/sV_Suchleiste"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/searchview_bg"
+            app:iconifiedByDefault="false"
+            app:queryHint="Nach Beschreibung suchen"></androidx.appcompat.widget.SearchView>
+
+
+        <EditText
+            android:id="@+id/pT_Suchleiste"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Suchleiste"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            android:textColorHint="#515151"
+            android:textSize="24dp"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rV_Nahrungsliste"
+            android:layout_width="match_parent"
+            android:layout_height="420dp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_Schnellhinzu"
+        android:layout_width="170dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:text="Schnell hinzufügen"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    <Button
+        android:id="@+id/btn_BarcodeScannen"
+        android:layout_width="170dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Barcode scannen"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    <Button
+        android:id="@+id/btn_eigeneNahrunghinzu"
+        android:layout_width="220dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginEnd="111dp"
+        android:text="Eigenes Nahrungsmittel erstellen"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_BarcodeScannen" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.journeyapps.barcodescanner.CompoundBarcodeView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scanner"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Fügen Sie hier Ihre benutzerdefinierte Schaltfläche hinzu -->
+    <ImageButton
+        android:id="@+id/toggle_torch_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/ic_flash_off" />
+
+</com.journeyapps.barcodescanner.CompoundBarcodeView>
