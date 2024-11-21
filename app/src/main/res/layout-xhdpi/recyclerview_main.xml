@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayoutMainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/background_theme_color"
+    android:backgroundTint="@color/background_theme_color"
+    android:outlineAmbientShadowColor="@color/background_theme_color"
+    android:outlineSpotShadowColor="@color/background_theme_color"
+    app:cardBackgroundColor="@color/background_theme_color">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_rounded_recyclerview_popup"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:outlineAmbientShadowColor="@color/background_theme_color"
+        android:outlineSpotShadowColor="@color/background_theme_color">
+
+        <LinearLayout
+            android:id="@+id/linearLayout9"
+            android:layout_width="380dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tV2main_Beschreibung"
+                style="@style/Widget.AppCompat.TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Beschreibung"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tV2main_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="ID"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout10"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/tV2main_Kcal"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_weight="0"
+                android:gravity="bottom"
+                android:text="9999"
+                android:textColor="@color/white"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/tV2main_Kcal2"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_weight="0"
+                android:gravity="bottom"
+                android:text=" Kcal"
+                android:textColor="@color/white"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/tV2main_Portionsmenge2"
+                style="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="0"
+                android:gravity="bottom"
+                android:text=","
+                android:textColor="@color/white"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tV2main_Portionsmenge"
+            style="bold"
+            android:layout_width="0dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="bottom"
+            android:text="9999"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/Carbsbox"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout10" />
+
+        <LinearLayout
+            android:id="@+id/Carbsbox"
+            android:layout_width="42dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="115dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:text="K"
+                android:textColor="@color/white"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/tV2main_Carbs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:gravity="bottom"
+
+                android:text="9999"
+                android:textColor="@color/white"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Fettebox"
+            android:layout_width="42dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/Carbsbox">
+
+            <TextView
+                android:id="@+id/textView142"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:text="F"
+                android:textColor="@color/white"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/tV2main_Fette"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:gravity="bottom"
+
+                android:text="9999"
+                android:textColor="@color/white"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Eiweissbox"
+            android:layout_width="42dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/Fettebox">
+
+            <TextView
+                android:id="@+id/textView1422"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:text="E"
+                android:textColor="@color/white"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/tV2main_Eiweiss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+
+                android:gravity="bottom"
+                android:text="9999"
+                android:textColor="@color/white"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
+

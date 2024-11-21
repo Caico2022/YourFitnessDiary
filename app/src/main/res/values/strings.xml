@@ -1,0 +1,13 @@
+<resources>
+    <string name="YourFitnessDiary">YourFitnessDiary</string>/>
+
+    <string name="Google_API_KEY">655717952525-0dgj656uh3o114u5fj270fsqo2u2tm9f.apps.googleusercontent.com</string>
+    <string name="Google_API_KEY_SignIn">655717952525-o2elroqbm485vsej3qctqp6gmiq7p6bu.apps.googleusercontent.com</string>
+    <string name="default_web_client_id">655717952525-0dgj656uh3o114u5fj270fsqo2u2tm9f.apps.googleusercontent.com</string>
+    <string name="title_activity_google_userdata_popup">GoogleUserdataPopup</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+
+</resources>

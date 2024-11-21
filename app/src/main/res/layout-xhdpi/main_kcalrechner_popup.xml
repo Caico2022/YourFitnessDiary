@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_maintopic"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="Kalorienrechner"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView0001"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Kalorienverbrauch"
+                        android:textColor="@android:color/holo_red_light"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Schätzung"
+                        android:textColor="@android:color/holo_red_light"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/geschlechtTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="Geschlecht"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/gewichtTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="Gewicht"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/alterTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="Alter"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/groesseTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="Größe"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/schritteTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="Schritte"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/kalorienzufuhrTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="Kalorienzufuhr"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/sportTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="Aktivitäten"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_rounded_holo_red_light"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/ergebnisTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="10"
+                        android:background="@drawable/bg_rounded_transparent"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="15dp"
+                        android:textColor="@android:color/holo_red_light"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textView23311"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="0dp"
+                        android:layout_weight="0"
+                        android:gravity="center"
+                        android:text="kcal"
+                        android:textColor="@android:color/holo_red_light"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:foregroundGravity="center"
+                    android:gravity="center">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/dd_geschlecht"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/bg_rounded_white"
+                        android:focusable="false"
+                        android:gravity="center"
+                        android:inputType="none"
+                        android:text="Männlich"
+                        android:textColorLink="@color/green_general"
+                        android:textSize="12dp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_rounded_white"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/gewichtEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="10"
+                        android:background="@drawable/bg_rounded_transparent"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="5dp"
+                        android:text="70"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="0dp"
+                        android:gravity="center"
+                        android:text="kg"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_rounded_white"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/alterEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="10"
+                        android:background="@drawable/bg_rounded_transparent"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="5dp"
+                        android:text="22"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textView234"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="0dp"
+                        android:layout_weight="0"
+                        android:gravity="center"
+                        android:text="Jahre"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_rounded_white"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/groesseEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="10"
+                        android:background="@drawable/bg_rounded_transparent"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="5dp"
+                        android:text="180"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textView233"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="0dp"
+                        android:layout_weight="0"
+                        android:gravity="center"
+                        android:text="cm"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_rounded_grey_25"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/schritteEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="10"
+                        android:background="@drawable/bg_rounded_transparent"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="5dp"
+                        android:text="0"
+                        android:textColor="@color/grey_hint_25"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textView2335"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="0dp"
+                        android:layout_weight="0"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_rounded_grey_25"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/kalorienzufuhrEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="10"
+                        android:background="@drawable/bg_rounded_transparent"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="5dp"
+                        android:text="0"
+                        android:textColor="@color/grey_hint_25"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textView2331"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="0dp"
+                        android:layout_weight="0"
+                        android:gravity="center"
+                        android:text="kcal"
+                        android:textColor="@color/grey_hint_25"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_rounded_grey_25"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/sportEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="10"
+                        android:background="@drawable/bg_rounded_transparent"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="5dp"
+                        android:text="0"
+                        android:textColor="@color/grey_hint_25"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textView23312"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="0dp"
+                        android:layout_weight="0"
+                        android:gravity="center"
+                        android:text="kcal"
+                        android:textColor="@color/grey_hint_25"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btn_mainPopupClose"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button_general"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Zurück"
+                android:textAllCaps="false"
+                android:textColor="@color/green_general"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btn_mainPopupSpeichern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button_general"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Speichern"
+                android:textAllCaps="false"
+                android:textColor="@color/green_general"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

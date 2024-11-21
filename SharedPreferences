@@ -1,0 +1,12 @@
+gespeicherte Variable editieren        
+SharedPreferences prefsSteps = getSharedPreferences("MyPrefs.StepCounterSubscribed", MODE_PRIVATE);
+                    SharedPreferences.Editor editor = prefsSteps.edit();
+                    editor.putBoolean("abonniertSteps", false);  // SP auf false setzen
+                    editor.apply();
+
+
+
+
+gespeicherte Variable empfangen
+        SharedPreferences prefsSteps = MainActivity.this.getSharedPreferences("MyPrefs.StepCounterSubscribed", MainActivity.MODE_PRIVATE);
+        boolean isAbonniertSteps = prefsSteps.getBoolean("abonniertSteps", false);  // false, wenn kein Wert in "abonniertSteps" gefunden

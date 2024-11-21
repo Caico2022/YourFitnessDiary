@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_ladescreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_rounded_transparent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".OFFBarcodescanner.OpenFoodFactsActivity">
+
+        <!-- Ladekreis in der Mitte -->
+
+        <!-- Optional: Text mit dem Fortschritt anzeigen -->
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:indeterminate="true"
+            android:indeterminateDrawable="@drawable/progress_circular" />
+
+        <TextView
+            android:id="@+id/textViewKcal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Nahrungsmittel wird gesucht..."
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_off"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tV_offTopic"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_maintopic"
+            android:gravity="center"
+            android:text="Beschreibung"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/Marke"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_margin="4dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tV_Markenname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Markenname"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/freiwillig"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Freiwillig"
+                        android:textColor="@color/white"
+                        android:textSize="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Portionsgroesse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_margin="4dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tV_Portionsgröße"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Portionsgröße"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/erfoderlich2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Erfoderlich"
+                        android:textColor="@color/white"
+                        android:textSize="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/PortionenProPackung"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_margin="4dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tV_Portionen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Portionen"
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/erfoderlich3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Erfoderlich"
+                        android:textColor="@color/white"
+                        android:textSize="10dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/pT_offMarke"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/bg_rounded_grey_25"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="z.B. Gut und Günstig"
+                    android:inputType="textPersonName"
+                    android:text="Marke"
+                    android:textColor="@color/white"
+                    android:textColorHint="#CACACA"
+                    android:textSize="16dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    android:layout_weight="0"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="3dp">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/dd_Einheiten"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/bg_rounded_green"
+                            android:focusable="false"
+                            android:inputType="none"
+                            android:text="100 g"
+                            android:textColor="@color/green_general"
+                            android:textColorLink="@color/green_general"
+                            android:textSize="16dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/pT_offAnzahlPrt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/bg_rounded_green"
+                    android:ems="5"
+                    android:gravity="center"
+                    android:hint="z.B. 1"
+                    android:inputType="numberDecimal"
+                    android:text="1"
+                    android:textColor="@color/green_general"
+                    android:textColorHint="@color/grey_hint_25"
+                    android:textSize="16dp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tV_Kcal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_margin="4dp"
+                        android:gravity="center"
+                        android:text="Kalorien"
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/tV_carbs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_margin="4dp"
+                        android:gravity="center"
+                        android:text="Carbs gesamt in g"
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/tV_fette"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_margin="4dp"
+                        android:gravity="center"
+                        android:text="Fette gesamt in g"
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/tV_EiweissGes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_margin="4dp"
+                        android:gravity="center"
+                        android:text="Eiweiß gesamt in g"
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/pT_offKcal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/bg_rounded_grey_25"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="Erforderlich"
+                        android:inputType="numberDecimal"
+                        android:text="500"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/pT_offCarbs"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/bg_rounded_grey_25"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="Freiwillig"
+                        android:inputType="numberDecimal"
+                        android:text="10"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/pT_offFette"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/bg_rounded_grey_25"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="Freiwillig"
+                        android:inputType="numberDecimal"
+                        android:text="20"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/pT_offEiweiss"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/bg_rounded_grey_25"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="Freiwillig"
+                        android:inputType="numberDecimal"
+                        android:text="30"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_offAufzeichnen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_button_general"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Speichern"
+            android:textAllCaps="false"
+            android:textColor="@color/green_general"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

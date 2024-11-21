@@ -1,0 +1,19 @@
+empfangene Klasse:    
+
+private String ziel, differenz;
+
+    public MainAbschliessenPopup(@NonNull Context context, String ziel, String differenz) {
+        super(context);
+        this.ziel = ziel;
+        this.differenz = differenz;
+    }
+
+        MainAbschliessenPopup mainAbschliessenPopup = new MainAbschliessenPopup(getContext(), ziel, differenz);
+
+
+
+
+
+sendende Klasse:
+            MainAbschliessenPopup mainAbschliessenPopup = new MainAbschliessenPopup(MainActivity.this, ziel, differenz);
+            mainAbschliessenPopup.show();

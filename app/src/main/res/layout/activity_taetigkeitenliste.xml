@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Nahrungsliste.NahrungslisteActivity"
+    android:background="@drawable/bg_general">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/sV_TaetSuchleiste"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            app:iconifiedByDefault="false"
+            app:queryHint="Suchleiste">
+
+        </androidx.appcompat.widget.SearchView>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rV_Taetigkeitenliste"
+            android:layout_width="match_parent"
+            android:layout_height="420dp" />
+
+
+    </LinearLayout>
+
+                    <Button
+      android:textStyle="bold"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+
+        android:id="@+id/btn_eigenTaetHinzu"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="16dp"
+        android:text="Taetigkeit erstellen"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+                    <Button
+      android:textStyle="bold"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+
+        android:id="@+id/btn_TaetHinzuSchnell"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="51dp"
+        android:text="Schnell hinzufügen"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
