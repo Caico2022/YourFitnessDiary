@@ -395,7 +395,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         checkIfStepCounterSubscribed();
     }
-    // Test
+    // Hello there
 
     private void checkIfStepCounterSubscribed() {
         // Prüfen, ob Stepcounter abonniert wurde
